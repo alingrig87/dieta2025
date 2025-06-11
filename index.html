@@ -1,88 +1,1428 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Plan de Alimentatie - 2 Luni</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; }
-        h1, h2, h3 { color: #2c3e50; }
-        ul { margin-bottom: 20px; }
-        .week { border-top: 2px solid #ccc; padding-top: 10px; margin-top: 20px; }
-        .day { margin-bottom: 10px; }
-        .meal { margin-left: 20px; }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f4f4f9;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #2c3e50;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #2c3e50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .week {
+        border-top: 2px solid #ccc;
+        padding-top: 10px;
+        margin-top: 20px;
+      }
+      .total {
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Plan de Alimentatie - 2 Luni</h1>
 
     <div class="week">
-        <h2>Saptamana 1</h2>
-        <h3>Lista de cumparaturi:</h3>
-        <ul>
-            <li>Piept de pui, curcan, somon, cod, ton</li>
-            <li>Oua, iaurt grecesc</li>
-            <li>Avocado, banane, mere</li>
-            <li>Cartofi dulci, cartofi normali, orez brun, quinoa</li>
-            <li>Salata verde, rosii, castraveti, spanac, broccoli, dovlecel</li>
-            <li>Ulei de masline, otet</li>
-            <li>Paine integrala, crackers</li>
-            <li>Seminte de chia, in, migdale, nuci</li>
-            <li>Batoane proteice, linte, naut, fasole rosie</li>
-        </ul>
-        <div class="day"><h3>Luni</h3><div class="meal">Pranz: Piept de pui la gratar + cartofi dulci copti + salata cu ulei de masline</div><div class="meal">Gustare: Iaurt grecesc cu seminte de chia</div><div class="meal">Cina: Somon + legume la abur + orez brun</div></div>
-        <div class="day"><h3>Marti</h3><div class="meal">Pranz: Omleta cu legume si avocado + paine integrala</div><div class="meal">Gustare: Banana + migdale</div><div class="meal">Cina: Salata cu pui, fasole rosie si paine integrala</div></div>
-        <div class="day"><h3>Miercuri</h3><div class="meal">Pranz: Quinoa cu legume si curcan</div><div class="meal">Gustare: Mar + crackers integrali</div><div class="meal">Cina: Cod cu spanac si cartofi la cuptor</div></div>
-        <div class="day"><h3>Joi</h3><div class="meal">Pranz: Salata cu ton, naut si legume</div><div class="meal">Gustare: Iaurt cu seminte de in</div><div class="meal">Cina: Curcan la gratar + broccoli si orez brun</div></div>
-        <div class="day"><h3>Vineri</h3><div class="meal">Pranz: Paste integrale cu legume si pui</div><div class="meal">Gustare: Batoane proteice</div><div class="meal">Cina: Salata calda cu legume coapte si somon</div></div>
-        <div class="day"><h3>Sambata</h3><div class="meal">Pranz: Orez cu linte si legume</div><div class="meal">Gustare: Fructe uscate si nuci</div><div class="meal">Cina: Omleta cu legume si salata verde</div></div>
-        <div class="day"><h3>Duminica</h3><div class="meal">Pranz: Friptura de vita slaba cu cartofi natur si salata</div><div class="meal">Gustare: Iaurt grecesc + banana</div><div class="meal">Cina: Supa crema de legume + crackers integrali</div></div>
+      <h2>Saptamana 1</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>Piept de pui, curcan, somon, cod, ton</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, iaurt grecesc</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Avocado, banane, mere</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Cartofi dulci, cartofi normali, orez brun, quinoa</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Salata verde, rosii, castraveti, spanac, broccoli, dovlecel</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Ulei de masline, otet</td>
+          <td>0.5 l</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine integrala, crackers</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Seminte de chia, in, migdale, nuci</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Batoane proteice, linte, naut, fasole rosie</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 1: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>
+            Pranz: Piept de pui la gratar + cartofi dulci copti + salata cu ulei
+            de masline
+          </td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc cu seminte de chia</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Somon + legume la abur + orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu legume si avocado + paine integrala</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Banana + migdale</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata cu pui, fasole rosie si paine integrala</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Quinoa cu legume si curcan</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Mar + crackers integrali</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Cod cu spanac si cartofi la cuptor</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Salata cu ton, naut si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt cu seminte de in</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan la gratar + broccoli si orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Paste integrale cu legume si pui</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Batoane proteice</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata calda cu legume coapte si somon</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Orez cu linte si legume</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe uscate si nuci</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu legume si salata verde</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita slaba cu cartofi natur si salata</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc + banana</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa crema de legume + crackers integrali</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
     </div>
 
     <div class="week">
-        <h2>Saptamana 2</h2>
-        <h3>Lista de cumparaturi:</h3>
-        <ul>
-            <li>File de pastrav, muschi de vita, carne de curcan tocata</li>
-            <li>Oua, branza cottage, kefir</li>
-            <li>Pere, prune, fructe de padure</li>
-            <li>Orez basmati, couscous, hrisca</li>
-            <li>Ardei gras, morcovi, conopida, sparanghel, varza rosie</li>
-            <li>Lamaie, usturoi, patrunjel</li>
-            <li>Paine de secara, tortilla integrala</li>
-            <li>Fistic, caju, seminte floarea-soarelui</li>
-            <li>Linte rosie, mazare, ciuperci</li>
-        </ul>
-        <div class="day"><h3>Luni</h3><div class="meal">Pranz: Muschi de vita cu hrisca si ardei gras</div><div class="meal">Gustare: Kefir cu fistic</div><div class="meal">Cina: File de pastrav cu conopida si morcovi la abur</div></div>
-        <div class="day"><h3>Marti</h3><div class="meal">Pranz: Omleta cu ciuperci si paine de secara</div><div class="meal">Gustare: Piersica si cateva nuci caju</div><div class="meal">Cina: Curcan tocat cu sos de rosii si couscous</div></div>
-        <div class="day"><h3>Miercuri</h3><div class="meal">Pranz: Salata calda cu mazare, sparanghel si ou fiert</div><div class="meal">Gustare: Branza cottage cu pere</div><div class="meal">Cina: Supa de linte rosie cu lamaie si patrunjel</div></div>
-        <div class="day"><h3>Joi</h3><div class="meal">Pranz: Tortilla integrala cu carne tocata si legume</div><div class="meal">Gustare: Kefir cu seminte de floarea-soarelui</div><div class="meal">Cina: File de pastrav cu legume la cuptor</div></div>
-        <div class="day"><h3>Vineri</h3><div class="meal">Pranz: Hrisca cu ciuperci si salata de varza rosie</div><div class="meal">Gustare: Fructe de padure cu iaurt</div><div class="meal">Cina: Tocanita de curcan cu morcovi si orez basmati</div></div>
-        <div class="day"><h3>Sambata</h3><div class="meal">Pranz: Couscous cu legume si naut</div><div class="meal">Gustare: Prune + caju</div><div class="meal">Cina: Omleta cu sparanghel si rosii</div></div>
-        <div class="day"><h3>Duminica</h3><div class="meal">Pranz: Friptura de vita cu cartofi natur si varza rosie</div><div class="meal">Gustare: Branza cottage cu fructe</div><div class="meal">Cina: Supa de mazare cu crutoane de secara</div></div>
+      <h2>Saptamana 2</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>File de pastrav, muschi de vita, carne de curcan tocata</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, branza cottage, kefir</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Pere, prune, fructe de padure</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Orez basmati, couscous, hrisca</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Ardei gras, morcovi, conopida, sparanghel, varza rosie</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Lamaie, usturoi, patrunjel</td>
+          <td>0.5 kg</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine de secara, tortilla integrala</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Fistic, caju, seminte floarea-soarelui</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Linte rosie, mazare, ciuperci</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 2: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>Pranz: Muschi de vita cu hrisca si ardei gras</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu fistic</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu conopida si morcovi la abur</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu ciuperci si paine de secara</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Piersica si cateva nuci caju</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan tocat cu sos de rosii si couscous</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Salata calda cu mazare, sparanghel si ou fiert</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu pere</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de linte rosie cu lamaie si patrunjel</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Tortilla integrala cu carne tocata si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu seminte de floarea-soarelui</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu legume la cuptor</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Hrisca cu ciuperci si salata de varza rosie</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe de padure cu iaurt</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tocanita de curcan cu morcovi si orez basmati</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Couscous cu legume si naut</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Prune + caju</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu sparanghel si rosii</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita cu cartofi natur si varza rosie</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu fructe</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de mazare cu crutoane de secara</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
     </div>
 
     <div class="week">
-        <h2>Saptamana 3</h2>
-        <h3>Lista de cumparaturi:</h3>
-        <ul>
-            <li>Carne de pui, peste alb, oua, tofu</li>
-            <li>Iaurt natural, lapte vegetal</li>
-            <li>Kiwi, mango, mere</li>
-            <li>Cartofi dulci, fulgi de ovaz, cuscus integral</li>
-            <li>Broccoli, rosii cherry, spanac, castraveti, ciuperci</li>
-            <li>Mustar, ulei de masline</li>
-            <li>Paine integrala, tortilla</li>
-            <li>Seminte dovleac, nuci braziliene</li>
-            <li>Linete, naut, fasole alba</li>
-        </ul>
-        <div class="day"><h3>Luni</h3><div class="meal">Pranz: Tofu la gratar cu broccoli si cuscus</div><div class="meal">Gustare: Kiwi + seminte de dovleac</div><div class="meal">Cina: Peste alb cu piure de cartofi dulci si castraveti</div></div>
-        <div class="day"><h3>Marti</h3><div class="meal">Pranz: Salata cu ou, spanac si ciuperci sotate</div><div class="meal">Gustare: Iaurt cu mango</div><div class="meal">Cina: Tacos cu pui si legume in tortilla integrala</div></div>
-        <div class="day"><h3>Miercuri</h3><div class="meal">Pranz: Cuscus cu naut si rosii cherry</div><div class="meal">Gustare: Mar + nuci braziliene</div><div class="meal">Cina: Supa de legume cu paine integrala</div></div>
-        <div class="day"><h3>Joi</h3><div class="meal">Pranz: Piept de pui la tigaie + salata cu spanac si mustar</div><div class="meal">Gustare: Fulgii de ovaz cu lapte vegetal si kiwi</div><div class="meal">Cina: Tofu cu legume coapte si orez brun</div></div>
-        <div class="day"><h3>Vineri</h3><div class="meal">Pranz: Quiche cu ciuperci si broccoli</div><div class="meal">Gustare: Iaurt + seminte</div><div class="meal">Cina: File de peste alb cu linte si rosii cherry</div></div>
-        <div class="day"><h3>Sambata</h3><div class="meal">Pranz: Salata cu tofu, mango si mix de seminte</div><div class="meal">Gustare: Fructe uscate + nuci</div><div class="meal">Cina: Omleta cu legume si castraveti</div></div>
-        <div class="day"><h3>Duminica</h3><div class="meal">Pranz: Pui cu cartofi dulci si salata</div><div class="meal">Gustare: Iaurt + mar</div><div class="meal">Cina: Supa crema de linte cu crutoane</div></div>
+      <h2>Saptamana 3</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>Carne de pui, peste alb, oua, tofu</td>
+          <td>2 kg</td>
+          <td>40 lei</td>
+        </tr>
+        <tr>
+          <td>Iaurt natural, lapte vegetal</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Kiwi, mango, mere</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Cartofi dulci, fulgi de ovaz, cuscus integral</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Broccoli, rosii cherry, spanac, castraveti, ciuperci</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Mustar, ulei de masline</td>
+          <td>0.5 l</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine integrala, tortilla</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Seminte dovleac, nuci braziliene</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Linete, naut, fasole alba</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 3: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>Pranz: Tofu la gratar cu broccoli si cuscus</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kiwi + seminte de dovleac</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Peste alb cu piure de cartofi dulci si castraveti</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Salata cu ou, spanac si ciuperci sotate</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt cu mango</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tacos cu pui si legume in tortilla integrala</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Cuscus cu naut si rosii cherry</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Mar + nuci braziliene</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de legume cu paine integrala</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Piept de pui la tigaie + salata cu spanac si mustar</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fulgii de ovaz cu lapte vegetal si kiwi</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tofu cu legume coapte si orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Quiche cu ciuperci si broccoli</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt + seminte</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de peste alb cu linte si rosii cherry</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Salata cu tofu, mango si mix de seminte</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe uscate + nuci</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu legume si castraveti</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Pui cu cartofi dulci si salata</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt + mar</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa crema de linte cu crutoane</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
     </div>
 
-</body>
+    <div class="week">
+      <h2>Saptamana 4</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>Piept de pui, curcan, somon, cod, ton</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, iaurt grecesc</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Avocado, banane, mere</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Cartofi dulci, cartofi normali, orez brun, quinoa</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Salata verde, rosii, castraveti, spanac, broccoli, dovlecel</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Ulei de masline, otet</td>
+          <td>0.5 l</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine integrala, crackers</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Seminte de chia, in, migdale, nuci</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Batoane proteice, linte, naut, fasole rosie</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 4: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>
+            Pranz: Piept de pui la gratar + cartofi dulci copti + salata cu ulei
+            de masline
+          </td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc cu seminte de chia</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Somon + legume la abur + orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu legume si avocado + paine integrala</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Banana + migdale</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata cu pui, fasole rosie si paine integrala</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Quinoa cu legume si curcan</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Mar + crackers integrali</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Cod cu spanac si cartofi la cuptor</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Salata cu ton, naut si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt cu seminte de in</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan la gratar + broccoli si orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Paste integrale cu legume si pui</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Batoane proteice</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata calda cu legume coapte si somon</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Orez cu linte si legume</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe uscate si nuci</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu legume si salata verde</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita slaba cu cartofi natur si salata</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc + banana</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa crema de legume + crackers integrali</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="week">
+      <h2>Saptamana 5</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>File de pastrav, muschi de vita, carne de curcan tocata</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, branza cottage, kefir</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Pere, prune, fructe de padure</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Orez basmati, couscous, hrisca</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Ardei gras, morcovi, conopida, sparanghel, varza rosie</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Lamaie, usturoi, patrunjel</td>
+          <td>0.5 kg</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine de secara, tortilla integrala</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Fistic, caju, seminte floarea-soarelui</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Linte rosie, mazare, ciuperci</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 5: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>Pranz: Muschi de vita cu hrisca si ardei gras</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu fistic</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu conopida si morcovi la abur</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu ciuperci si paine de secara</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Piersica si cateva nuci caju</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan tocat cu sos de rosii si couscous</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Salata calda cu mazare, sparanghel si ou fiert</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu pere</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de linte rosie cu lamaie si patrunjel</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Tortilla integrala cu carne tocata si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu seminte de floarea-soarelui</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu legume la cuptor</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Hrisca cu ciuperci si salata de varza rosie</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe de padure cu iaurt</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tocanita de curcan cu morcovi si orez basmati</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Couscous cu legume si naut</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Prune + caju</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu sparanghel si rosii</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita cu cartofi natur si varza rosie</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu fructe</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de mazare cu crutoane de secara</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="week">
+      <h2>Saptamana 6</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>Carne de pui, peste alb, oua, tofu</td>
+          <td>2 kg</td>
+          <td>40 lei</td>
+        </tr>
+        <tr>
+          <td>Iaurt natural, lapte vegetal</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Kiwi, mango, mere</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Cartofi dulci, fulgi de ovaz, cuscus integral</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Broccoli, rosii cherry, spanac, castraveti, ciuperci</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Mustar, ulei de masline</td>
+          <td>0.5 l</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine integrala, tortilla</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Seminte dovleac, nuci braziliene</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Linete, naut, fasole alba</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 6: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>Pranz: Tofu la gratar cu broccoli si cuscus</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kiwi + seminte de dovleac</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Peste alb cu piure de cartofi dulci si castraveti</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Salata cu ou, spanac si ciuperci sotate</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt cu mango</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tacos cu pui si legume in tortilla integrala</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Cuscus cu naut si rosii cherry</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Mar + nuci braziliene</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de legume cu paine integrala</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Piept de pui la tigaie + salata cu spanac si mustar</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fulgii de ovaz cu lapte vegetal si kiwi</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tofu cu legume coapte si orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Quiche cu ciuperci si broccoli</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt + seminte</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de peste alb cu linte si rosii cherry</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Salata cu tofu, mango si mix de seminte</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe uscate + nuci</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu legume si castraveti</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Pui cu cartofi dulci si salata</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt + mar</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa crema de linte cu crutoane</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="week">
+      <h2>Saptamana 7</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>Piept de pui, curcan, somon, cod, ton</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, iaurt grecesc</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Avocado, banane, mere</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Cartofi dulci, cartofi normali, orez brun, quinoa</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Salata verde, rosii, castraveti, spanac, broccoli, dovlecel</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Ulei de masline, otet</td>
+          <td>0.5 l</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine integrala, crackers</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Seminte de chia, in, migdale, nuci</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Batoane proteice, linte, naut, fasole rosie</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 7: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>
+            Pranz: Piept de pui la gratar + cartofi dulci copti + salata cu ulei
+            de masline
+          </td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc cu seminte de chia</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Somon + legume la abur + orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu legume si avocado + paine integrala</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Banana + migdale</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata cu pui, fasole rosie si paine integrala</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Quinoa cu legume si curcan</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Mar + crackers integrali</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Cod cu spanac si cartofi la cuptor</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Salata cu ton, naut si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt cu seminte de in</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan la gratar + broccoli si orez brun</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Paste integrale cu legume si pui</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Batoane proteice</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Salata calda cu legume coapte si somon</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Orez cu linte si legume</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe uscate si nuci</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu legume si salata verde</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita slaba cu cartofi natur si salata</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Iaurt grecesc + banana</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa crema de legume + crackers integrali</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="week">
+      <h2>Saptamana 8</h2>
+      <h3>Lista de cumparaturi:</h3>
+      <table>
+        <tr>
+          <th>Produs</th>
+          <th>Gramaj</th>
+          <th>Pret estimativ</th>
+        </tr>
+        <tr>
+          <td>File de pastrav, muschi de vita, carne de curcan tocata</td>
+          <td>2 kg</td>
+          <td>60 lei</td>
+        </tr>
+        <tr>
+          <td>Oua, branza cottage, kefir</td>
+          <td>12 buc</td>
+          <td>10 lei</td>
+        </tr>
+        <tr>
+          <td>Pere, prune, fructe de padure</td>
+          <td>1.5 kg</td>
+          <td>22.5 lei</td>
+        </tr>
+        <tr>
+          <td>Orez basmati, couscous, hrisca</td>
+          <td>2 kg</td>
+          <td>16 lei</td>
+        </tr>
+        <tr>
+          <td>Ardei gras, morcovi, conopida, sparanghel, varza rosie</td>
+          <td>2 kg</td>
+          <td>24 lei</td>
+        </tr>
+        <tr>
+          <td>Lamaie, usturoi, patrunjel</td>
+          <td>0.5 kg</td>
+          <td>12.5 lei</td>
+        </tr>
+        <tr>
+          <td>Paine de secara, tortilla integrala</td>
+          <td>1 buc</td>
+          <td>5 lei</td>
+        </tr>
+        <tr>
+          <td>Fistic, caju, seminte floarea-soarelui</td>
+          <td>0.5 kg</td>
+          <td>15 lei</td>
+        </tr>
+        <tr>
+          <td>Linte rosie, mazare, ciuperci</td>
+          <td>1 kg</td>
+          <td>20 lei</td>
+        </tr>
+      </table>
+      <div class="total">Cost total saptamana 8: 165 lei</div>
+      <h3>Mese:</h3>
+      <table>
+        <tr>
+          <th>Ziua</th>
+          <th>Masa</th>
+          <th>Calorii</th>
+        </tr>
+        <tr>
+          <td>Luni</td>
+          <td>Pranz: Muschi de vita cu hrisca si ardei gras</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu fistic</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu conopida si morcovi la abur</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Marti</td>
+          <td>Pranz: Omleta cu ciuperci si paine de secara</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Piersica si cateva nuci caju</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Curcan tocat cu sos de rosii si couscous</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Miercuri</td>
+          <td>Pranz: Salata calda cu mazare, sparanghel si ou fiert</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu pere</td>
+          <td>150 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de linte rosie cu lamaie si patrunjel</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Joi</td>
+          <td>Pranz: Tortilla integrala cu carne tocata si legume</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Kefir cu seminte de floarea-soarelui</td>
+          <td>200 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: File de pastrav cu legume la cuptor</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td>Vineri</td>
+          <td>Pranz: Hrisca cu ciuperci si salata de varza rosie</td>
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Fructe de padure cu iaurt</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Tocanita de curcan cu morcovi si orez basmati</td>
+          <td>650 kcal</td>
+        </tr>
+        <tr>
+          <td>Sambata</td>
+          <td>Pranz: Couscous cu legume si naut</td>
+          <td>550 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Prune + caju</td>
+          <td>300 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Omleta cu sparanghel si rosii</td>
+          <td>500 kcal</td>
+        </tr>
+        <tr>
+          <td>Duminica</td>
+          <td>Pranz: Friptura de vita cu cartofi natur si varza rosie</td>
+          <td>700 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Gustare: Branza cottage cu fructe</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Cina: Supa de mazare cu crutoane de secara</td>
+          <td>400 kcal</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="total">Cost total pentru 8 saptamani: 1320 lei</div>
+  </body>
 </html>
